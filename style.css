@@ -1,0 +1,350 @@
+@media screen and ( max-width:600px ) {
+    .content {
+        width: 100%;
+        display: none;
+    }
+    .navbar {
+    position: fixed;
+    height: 100%;
+    background-color: #343434;
+    clear: both;
+    width: 30%;
+    z-index: 2;
+    }
+    .topbar {
+        display: none;
+    }
+    #disappear {
+        display: none;
+    }
+    .mainart {
+        height: 300px;
+    }
+    #hero,#reason,#goal {
+        max-width: 85%;
+    }
+    #hero:hover,#reason:hover,#goal:hover {
+    transform: translatey(-5px);
+}
+#galeria {
+    text-align: center;
+}
+.mainphoto {
+    width: 400px;
+    height: auto;
+}
+.subphoto {
+    display: flexb;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: auto;
+}
+   .cover {
+   display: none;
+}
+iframe {
+    display: none;
+}
+td {
+    font-size: x-small;
+}
+}
+
+@media screen and (max-width:1200px ) and (min-width:600px) {
+    .collapsible {
+    display: none;
+}
+    main {
+        margin: 0px;
+        padding: 0px;
+    }
+    .navbar {
+        display: none;
+    }
+    .faq section {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .mainart {
+        float: left;
+        min-width: 40%;
+        max-width: none;
+    }
+    .cover {
+        display: none;
+    }
+    .gametext {
+    width: 30%;
+    text-shadow: 1px 1px #303030;
+}
+#galeria {
+    text-align: center;
+}
+.mainphoto {
+    height: 400px;
+    width: auto;
+}
+.subphoto {
+    height: 80px;
+    width: auto;
+}
+#game h2 {
+    text-shadow: 1px 1px #303030;
+}
+#one {
+    background-image: url("photo/cityoftears.png");
+}
+#two{background-image: url("photo/fallendown.png");}
+#three{background-image: url("photo/celestesummit.png");}
+#four{background-image: url("photo/terrariahell2.png");}
+#five{background-image: url("photo/stardewvalleyguild.jpg");}
+#six{background-image: url("photo/tboibasement.jpg");}
+#seven{background-image: url("photo/vampsurvivorsscreenie.jpg");}
+#hero:hover,#reason:hover,#goal:hover {
+    transform: translatey(-5px);
+}
+}
+@media screen and ( min-width:1200px) { 
+    main {
+    margin-left: 10%;
+}
+.faq section {
+    display: flex;
+    justify-content: center;
+}
+.mainart {
+    float: left;
+    width: 20%;
+    min-height: 325px;
+}
+#hero,#reason,#goal {
+    width: 40%;
+}
+#hero:hover,#reason:hover,#goal:hover {
+    transform: translateX(20px);
+}
+.topbar {
+    display: none;
+}
+#game section {
+    float: left;
+}
+.gametext {
+    width: 40%;
+    float: left;
+}
+.cover {
+    width: 400px;
+    float: left;
+}
+.collapsible {
+    display: none;
+}
+.content {
+    display: block;
+}
+.navbar {
+    
+    width: 10%;
+}
+audio {
+    float: left;
+}
+#galeria {
+    text-align: center;
+}
+.mainphoto {
+    height: 500px;
+    width: auto;
+}
+.subphoto {
+    border: 1px solid black;
+    height:100px;
+    width: auto;
+}
+}
+#headersub {
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+}
+
+header {
+    animation-name: mainani;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    color: white;
+    
+}
+header a {
+    color: rgb(0, 0, 0);
+    animation-name:none;
+}
+header, footer{
+    background-color: #500050;
+    text-align: center;
+    color: white;
+    padding: 7px;
+    font-family: sans-serif;
+    
+}
+footer {
+    clear: both;
+}
+body {
+    background-color: #303030;
+    margin: 0; 
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: #343434;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    font-family: 'segoe ui';
+
+}
+
+.navbar a:hover{
+    background-color: #404040;
+}
+.navbar {
+    position: fixed;
+    height: 100%;
+    background-color: #343434;
+    clear: both;
+}
+
+
+.mainart {
+    background-color: #242424;
+    margin: 0.5%;
+    border-radius: 5%;
+    padding: 1%;
+    color: white;
+    font-family: Arial;
+    font-size:larger;
+    text-align: center;
+
+}
+main h2 {
+    color: #af00af;
+    padding-left: 5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+@keyframes mainani{
+    0% {background-color: #500050;
+    text-shadow: none;}
+        
+    50% {
+        background-color: #6A006A;
+        text-shadow: 1px 1px 5px white;
+    }
+    100% {
+        background-color: #500050;
+        text-shadow: none;
+    }
+}
+#break {
+    background-color: #500050;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    font-family: sans-serif;
+}
+#hero,#reason,#goal {
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: larger;
+    font-family: sans-serif;
+    transition: all 1s ease;
+}
+
+#maincontent {
+    background-color: #242424;
+    padding: 7px;
+}
+
+footer a {
+    color: gray;
+}
+.topbar {
+    text-align: center;
+    font-family: sans-serif;
+}
+.topbar ul{
+    list-style-type: none;
+    background-color: #343434;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.topbar a{
+color: white;
+text-decoration: none;
+padding: 15px;
+display: block;
+ text-align: center;
+}
+
+.topbar a:hover{
+    background-color: #404040;
+}
+
+.topbar li{
+    float: left;
+}
+.gametext {
+    color: white;
+    font-family: sans-serif;
+    font-size: larger;
+}
+.cover {
+    border: 2px solid black;
+}
+.collapsible {
+    position: fixed;
+    bottom:0;
+    left:0;
+    margin: 10px;
+    background-color: #242424;
+    z-index: 3;
+    outline: none;
+    border: none;
+    color: white;
+}
+#opinion {
+    color: white;
+    font-family: sans-serif;
+}
+label {
+    color: white;
+    font-family:sans-serif;
+}
+.gallerytext {
+    text-align: center;
+    color: white;
+}
+table {
+    background-color: purple;
+    border: 1px solid rgb(168, 0, 168);
+}
+tr {
+    border: 1px solid rgb(168, 0, 168);
+    color:white;
+}
+td {
+    border: 1px solid rgb(168, 0, 168);
+}

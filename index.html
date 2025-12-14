@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arsenii Anatoliev">
+    <link rel="stylesheet" href="style.css">
+    <title>Gry Indie</title>
+</head>
+<body>
+    <button type="button" class="collapsible">Menu</button>
+  <div class="content">
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Strona Główna</a></li>
+            <li><a href="games.html">Gry</a></li>
+            <li><a href="form.html">Ankieta</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+        </ul>
+    </nav>
+</div>
+    <main><header id="mainheader">
+        <h1 id="top">Gry Indie</h1>
+        <p id="headersub"> gatunek pokazujący, że najlepsze pomysły rodzą się z wolności twórczej</p>
+    </header>
+      <nav class="topbar">
+         <ul>
+            <li><a href="index.html">Strona Główna</a></li>
+            <li><a href="games.html">Gry</a></li>
+            <li><a href="form.html">Ankieta</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+        </ul>
+    </nav>
+    <section id="maincontent">
+    <section id="hero">
+        <h2>Świat gier indie</h2>
+        <div class="maintext">Gry indie to wyjątkowa przestrzeń w branży gier wideo, w której kreatywność i pasja odgrywają kluczową
+             rolę. Niezależni twórcy, działający poza dużymi studiami, tworzą produkcje, które często zaskakują świeżymi
+              pomysłami, nietypową estetyką oraz odważnym podejściem do rozgrywki.</div>
+    </section> <br>
+    <section id="reason">
+        <h2>Dlaczego gry indie?</h2>
+        <div class="maintext">Gry indie oferują doświadczenia, które często wykraczają poza utarte schematy znane z największych tytułów.
+         Dzięki niezależności twórczej deweloperzy mogą realizować własne wizje i podejmować ryzyko, na które
+          rzadko mogą pozwolić sobie duże studia.</div>
+    </section> <br>
+    <section id="goal">
+        <h2>Misja </h2>
+        <div class="maintext">Celem tej strony jest przybliżenie świata gier indie oraz pokazanie ich znaczenia we współczesnej branży gier
+             wideo. Chcę zwrócić uwagę na wartość niezależnej twórczości, która udowadnia, że innowacja
+             i kreatywność nie wymagają ogromnych budżetów.</div>
+    </section>
+    </section>
+    <div id="break"><h3>FAQ</h3></div>
+    <section id="faq">
+        <article class="mainart"><h2>Czym są gry indie?</h2>
+            <div class="faq">Gry indie to produkcje tworzone przez niezależnych deweloperów, często niewielkie zespoły lub nawet
+            pojedyncze osoby, które stawiają na kreatywność i oryginalność zamiast ogromnych budżetów. Dzięki tej
+             niezależności twórcy mogą eksperymentować z mechanikami rozgrywki, narracją oraz oprawą graficzną,
+              oferując graczom świeże i nieszablonowe doświadczenia.</div>
+        </article>
+        <article class="mainart">
+        <h2>Co jest ważnego w grach indie?</h2>
+        <div class="faq">W świecie gier indie liczy się przede wszystkim pomysł. To właśnie tutaj powstają tytuły, które poruszają
+             emocjonalne historie, podejmują nietypowe tematy lub wprowadzają innowacyjne rozwiązania
+              gameplayowe. Często prosta grafika idzie w parze z głęboką treścią, a minimalistyczny styl staje się
+               świadomym wyborem artystycznym.
+            </div></article>
+        <article class="mainart" id="disappear"><h2>Jaka jest zaleta gier indie?</h2>
+        <div class="faq">Ogromną zaletą gier indie jest ich różnorodność. Można wśród nich znaleźć zarówno dynamiczne
+            platformówki, klimatyczne gry przygodowe, jak i ambitne produkcje logiczne czy symulatory. Niezależne gry
+            często rozwijane są we współpracy ze społecznością graczy, co pozwala twórcom reagować na opinie i stale
+            ulepszać swoje projekty.</div></article>
+        <article class="mainart"><h2>Dlaczego gry indie stały się popularne?</h2>
+        <div class="faq">
+            Dzięki platformom cyfrowej dystrybucji gry indie stały się łatwo dostępne dla szerokiego grona odbiorców
+            na całym świecie. Dziś stanowią one ważną część rynku gier, udowadniając, że pasja, kreatywność i odwaga w
+            realizowaniu własnej wizji potrafią konkurować z największymi produkcjami branży
+        </div>
+        </article>
+    </section>
+    <footer>
+        Stronę wykonał Arsenii Anatoliev <br>
+        <a href="#top">do góry</a>
+    </footer>
+    </main>
+    <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>

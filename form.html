@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arsenii Anatoliev">
+    <link rel="stylesheet" href="style.css">
+    <title>Dodatkowe</title>
+</head>
+<body>
+  <button type="button" class="collapsible">Menu</button>
+ <div class="content">
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Strona Główna</a></li>
+            <li><a href="games.html">Gry</a></li>
+            <li><a href="form.html">Ankieta</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+        </ul>
+    </nav>
+</div>
+    <header>
+        <h1 id="top">Ankieta</h1>
+    </header>
+    <nav class="topbar">
+         <ul>
+            <li><a href="index.html">Strona Główna</a></li>
+            <li><a href="games.html">Gry</a></li>
+            <li><a href="form.html">Ankieta</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+        </ul>
+    </nav>
+    <main>
+      <p id="opinion">Twoja opinia pomoże w ulepszeniu strony</p>
+      <form>
+        <label for="fname">imię</label>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">nazwisko</label>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="rate">na ile ci się podobała strona?</label>
+        <input type="range" max="10" min="0" id="rate" name="rate"><br>
+        <label for="interest">które gry ciebie zainteresowały?</label><br>
+        <input type="checkbox" name="interest" id="hk2" value="Hollow Knight2"><label for="hk2">Hollow Knight</label><br>
+        <input type="checkbox" name="interest" id="undertale2" value="Undertale2"><label for="undertale2">Undertale</label><br>
+        <input type="checkbox" name="interest" id="celeste2" value="Celeste2"><label for="celeste2">Celeste</label><br>
+        <input type="checkbox" name="interest" id="terraria2" value="Terraria2"><label for="terraria2">Terraria</label><br>
+        <input type="checkbox" name="interest" id="stardew2"value="Stardew Valley2"><label for="stardew2">Stardew Valley</label><br>
+        <input type="checkbox" name="interest" id="tboi2" value="The Binding of Isaac2"><label for="tboi2">The Binding of Isaac</label><br>
+        <input type="checkbox" name="interest" id="Vampire Survivors2" value="Vampire Survivors2"><label for="Vampire Survivors2">Vampuire Survivors</label><br>
+        <label for="which">która gra ci się najbardziej spodobała?</label><br>
+        <input type="radio" name="which" id="hk" value="Hollow Knight"><label for="hk">Hollow Knight</label><br>
+        <input type="radio" name="which" id="undertale" value="Undertale"><label for="undertale">Undertale</label><br>
+        <input type="radio" name="which" id="celeste" value="Celeste"><label for="celeste">Celeste</label><br>
+        <input type="radio" name="which" id="terraria" value="Terraria"><label for="terraria">Terraria</label><br>
+        <input type="radio" name="which" id="stardew"value="Stardew Valley"><label for="stardew">Stardew Valley</label><br>
+        <input type="radio" name="which" id="tboi" value="The Binding of Isaac"><label for="tboi">The Binding of Isaac</label><br>
+        <input type="radio" name="which" id="Vampire Survivors" value="Vampire Survivors"><label for="Vampire Survivors">Vampuire Survivors</label><br>
+        <button type="reset">wyczyść</button>
+        <button type="submit">wyślij</button>
+      </form>
+    </main>
+        <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>

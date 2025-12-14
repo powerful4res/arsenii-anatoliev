@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arsenii Anatoliev">
+    <link rel="stylesheet" href="style.css">
+    <title>Galeria</title>
+</head>
+<body>
+      <button type="button" class="collapsible">Menu</button>
+ <div class="content">
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Strona Główna</a></li>
+            <li><a href="games.html">Gry</a></li>
+            <li><a href="form.html">Ankieta</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+        </ul>
+    </nav>
+</div>
+    <header>
+        <h1 id="top">Galeria</h1>
+    </header>
+    <nav class="topbar">
+         <ul>
+            <li><a href="index.html">Strona Główna</a></li>
+            <li><a href="games.html">Gry</a></li>
+            <li><a href="form.html">Ankieta</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+        </ul>
+    </nav>
+    <main id="gallery">
+        <p class="gallerytext">To jest galeria zrzutów ekranu z gry Hollow Knight</p>
+    <p id="galeria">
+            <img src="photo/hkforgotten.png" alt="photo1" class="mainphoto"><br>
+            <a href="galeria.html"><img src="photo/hkforgotten.png" alt="photo1" class="subphoto"></a>
+            <a href="galeria2.html"><img src="photo/hkfasttravel.png" alt="photo2" class="subphoto"></a>
+            <a href="galeria3.html"><img src="photo/hkqueensgarden.png" alt="photo3" class="subphoto"></a>
+            <a href="galeria4.html"><img src="photo/hkstorerooms.png" alt="photo4" class="subphoto"></a>
+        </p>
+        <p class="gallerytext">
+          Team Cherry, które jest odpowiedzialne za stworzenie tej gry ma swoją siedzibę w Adelaide Australii. <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418339.51540610293!2d138.2815254624053!3d-34.999758878719966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab735c7c526b33f%3A0x4033654628ec640!2sAdelaide%20SA%2C%20Australia!5e0!3m2!1sen!2spl!4v1765715935728!5m2!1sen!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </p>
+    </main>
+          <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
